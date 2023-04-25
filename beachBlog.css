@@ -1,0 +1,80 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ---------------- Main Banner ---------------- */
+.main-banner {
+    --childs: 5;
+    gap: 2px;
+    background: black;
+    width: 100%;
+    display: flex;
+}
+  
+.box {
+    width: calc((100% / var(--childs)));
+    box-sizing: border-box;
+    height: 450px;
+    background-color: white;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: width 300ms 50ms ease-in-out;
+}
+  
+.box:hover {
+    width: calc((100% / (var(--childs) - 2)));
+}
+  
+.main-banner:has(.box:hover) .box:not(:hover) {
+    width: calc((100% / (var(--childs) + 1)));
+}
+  
+.box-1 {
+    background-image: url("https://images.pexels.com/photos/3355788/pexels-photo-3355788.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+  
+.box-2 {
+    background-image: url("https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+  
+.box-3 {
+    background-image: url("https://images.pexels.com/photos/2645245/pexels-photo-2645245.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+  
+.box-4 {
+    background-image: url("https://images.pexels.com/photos/3250362/pexels-photo-3250362.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+  
+.box-5 {
+    background-image: url("https://images.pexels.com/photos/930683/pexels-photo-930683.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+
+.topic{
+    color:rgb(41, 172, 228);
+    font-weight: 700;
+    font-size: 60px;
+    margin-top: 70px;
+    margin-left: 230px;
+}
+.topicDesc{
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.list{
+    align-content: center;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }

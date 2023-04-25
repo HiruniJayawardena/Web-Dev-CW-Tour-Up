@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tour Up - Sri Lanka</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="images/logo.jpeg">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="checkout.css">
+        
+        <!--boxicons-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- Sweet Alert -->
+        <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    </head>
+    
+    <body id="entireBody">
+      <!-- Navigation Bar -->
+      <div class="navbar">
+        <ul class="nav_links">
+          <li><a href=""><img id="logo" src="images/logo.jpeg" alt="" class="logo"></a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="comments.html" style="padding-left: 250px; ">Comments</a></li>
+          <li><a href="shop.html" style="padding-left: 100px; font-size: large; color:cadetblue">Shop</a></li>
+          <li><a href="quiz.html" style="padding-left: 100px;">Quiz</a></li>
+          <li><a href="blog.html" style="padding-left: 100px;">Blog</a></li>
+          <li><a href="sitemap.html" style="padding-left: 100px;">Site Map</a></li>
+          <li><a href="aboutus.html" style="padding-left: 100px;">About Us</a></li>
+          <li><a href="gallery.html" style="padding-left: 100px;">Gallery</a></li>
+        </ul>
+      </div>
+      <br>
+
+      <div class="checkout-container">
+
+        <form>
+
+            <div class="col">
+
+                <div class="checkout-row">
+                    <h3 class="title">Order Summary</h3>
+                    <p>Description : Pay Bill</p>
+                    <p id="total"> </p>
+                </div>
+
+                <div class="checkout-row">
+                    <h3 class="title">Payment Details</h3>
+
+                    <div class="inputBox">
+                        <span>cards accepted :</span>
+                        <img src="images/card_img.png" alt="">
+                    </div>
+                    <div class="inputBox">
+                        <span><i class='bx bxs-star' style='color:#ec3c3c'  ></i>Name on card :</span>
+                        <input type="text" id="cardholderName" placeholder="mr. john deo">
+                        <div id="errorMsgName" class="errorMsgBox"></div>
+                    </div>
+                    <div class="inputBox">
+                        <span><i class='bx bxs-star' style='color:#ec3c3c'  ></i>credit card number :</span>
+                        <input type="number" id="cardNumber" placeholder="1111-2222-3333-4444">
+                        <div id="errorMsgCard" class="errorMsgBox"></div>
+                    </div>
+                    
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span><i class='bx bxs-star' style='color:#ec3c3c'  ></i>Expiry month and year :</span>
+                            <input type="month" id="exp">
+                            <div id="errorMsgDate" class="errorMsgBox"></div>
+                        </div>
+                        <div class="inputBox">
+                            <span><i class='bx bxs-star' style='color:#ec3c3c'  ></i>CVV :</span>
+                            <input type="number" id="cvv" placeholder="1234">
+                            <div id="errorMsgCVV" class="errorMsgBox"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkout-row">
+                    
+                    <p id="address"></p>
+                    <p id="name"></p>
+                    <p>Shipping Address</p>
+                    <div class="content">
+                        
+                            <div class="inputBox">
+                                <span><i class='bx bxs-star' style='color:#ec3c3c'  ></i>Address 1 :</span>
+                                <input type="text" id="line1">
+                                <div id="errorMsgAddress" class="errorMsgBox"></div>
+                            </div>
+                            <div class="inputBox">
+                                <span>Address 2 :</span>
+                                <input type="text" id="line2">
+                            </div>
+                            <div class="inputBox">
+                                <span><i class='bx bxs-star' style='color:#ec3c3c'  ></i>Town/City :</span>
+                                <input type="text" id="line4">
+                                <div id="errorMsgTown" class="errorMsgBox"></div>
+                            </div>
+                            <div class="inputBox">
+                                <span>State/Region :</span>
+                                <input type="text" id="line5">
+                            </div>
+                            <div class="inputBox">
+                                <span><i class='bx bxs-star' style='color:#ec3c3c'  ></i>Postal Code/Zip Code :</span>
+                                <input type="number" id="line6">
+                                <div id="errorMsgPostalCode" class="errorMsgBox"></div>
+                            </div>
+                            <div class="inputBox">
+                                <span><i class='bx bxs-star' style='color:#ec3c3c'  ></i>Country :</span>
+                                <input type="text" id="line7">
+                                <div id="errorMsgCountry" class="errorMsgBox"></div>
+                            </div>
+                    </div>
+
+                </div> 
+
+                <div class="checkout-row">
+                    <p id="contact"></p>
+                    <div class="content">
+                        <div class="inputBox">
+                            <span><i class='bx bxs-star' style='color:#ec3c3c'  ></i>Email Address :</span>
+                            <input type="text" id="line8">
+                            <div id="errorMsgMail" class="errorMsgBox"></div>
+                        </div>
+                        <div class="inputBox">
+                            <span><i class='bx bxs-star' style='color:#ec3c3c'  ></i>Contact Number :</span>
+                            <input type="number" id="line9">
+                            <div id="errorMsgMobile" class="errorMsgBox"></div>
+                        </div>
+                       
+                    </div>
+                    
+                </div>
+            
+            </div>
+        
+            <button type="button" class="submit-btn">Place the order</button>   
+
+        </form>
+    
+    </div>
+
+      <br><br><br><br><br><br>
+        
+      <!-- Footer -->
+      <footer>
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social_icon">
+          <li><a href="#" style="text-decoration: none;">Tour Up - Sri Lanka</a></li>
+        </ul>
+            
+        <ul class="menu">
+          <div class="tooltip">
+            <li>Created by - <a href="PageEditorHirushi.html" target="_blank">Hirushi Amarasinghe</a></li>
+            <span class="tooltiptext">Click on to view Page Editor</span>
+          </div>
+        </ul>
+        <p>Web Development Coursework - 2023 | All Rights Reserved</p>
+      </footer>
+      <script src="checkout.js"></script> 
+    </body>
+</html>

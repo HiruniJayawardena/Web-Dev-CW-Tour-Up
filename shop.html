@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tour Up - Sri Lanka</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/logo.jpeg">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="shop.css">
+        
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@4/bulma.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    </head>
+    
+    <body>
+      <!-- Navigation Bar -->
+      <header>
+      <div class="navbar">
+        <ul class="nav_links">
+          <li><a href=""><img id="logo" src="images/logo.jpeg" alt="" class="logo"></a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="comments.html" style="padding-left: 250px; ">Comments</a></li>
+          <li><a href="shop.html" style="padding-left: 100px; font-size: large; color:cadetblue">Shop</a></li>
+          <li><a href="quiz.html" style="padding-left: 100px;">Quiz</a></li>
+          <li><a href="blog.html" style="padding-left: 100px;">Blog</a></li>
+          <li><a href="sitemap.html" style="padding-left: 100px;">Site Map</a></li>
+          
+        </ul>
+      </div>
+      <br>
+
+        <div class="nav shop-container">
+
+            <h2 class="section-title">Shop Products</h2>
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+          
+            <!-- cart  -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+
+                <!-- Content  -->
+                <div class="cart-content">
+                </div>
+
+                <!-- Total  -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price" id="total">$0.00</div>
+                </div>
+
+                <!--Personal Details-->
+                <div class="details">
+                    <div class="inputBox">
+                        <span>Full Name :</span>
+                        <input type="text" id="cust-name" placeholder="john deo">
+                        <div id="errorMsgName" class="errorMsgBox"></div>
+                    </div>
+                    <div class="inputBox">
+                        <span>Email :</span>
+                        <input type="email" id="cust-email" placeholder="example@example.com">
+                        <div id="errorMsgMail" class="errorMsgBox"></div>
+                    </div>
+                    <div class="inputBox">
+                        <span>Shipping Address :</span>
+                        <input type="text" id="cust-address" placeholder="number - street - locality">
+                        <div id="errorMsgAddress" class="errorMsgBox"></div>
+                    </div>
+                </div>
+                
+                <!-- Buy Button  -->
+                <button type="button" class="btn-buy">Go to CheckOut</button>
+                
+                <!-- Cart Close  -->
+                <i class='bx bx-x' id="cart-close"></i>
+            </div>
+        </div>
+    </header>
+
+    <!--shop section-->
+    <section class="shop shop-container">
+
+        <!-- Content  -->
+        <div class="shop-content">
+            <!-- Box 1  -->
+            <div class="product-box">
+                <img src="images/backpack.png" alt="" class="product-img">
+                <h2 class="product-title">Camping Backpack</h2>
+                <span class="product-price">$25.04</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 2  -->
+            <div class="product-box">
+                <img src="images/camping-tent.png" alt="" class="product-img">
+                <h2 class="product-title">Camping Tent</h2>
+                <span class="product-price">$120.52</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 3  -->
+            <div class="product-box">
+                <img src="images/firstaid-kit.png" alt="" class="product-img">
+                <h2 class="product-title">Firstaid Kit</h2>
+                <span class="product-price">$22.31</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 4  -->
+            <div class="product-box">
+                <img src="images/flashlight.png" alt="" class="product-img">
+                <h2 class="product-title">Flash Light</h2>
+                <span class="product-price">$18.70</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 5  -->
+            <div class="product-box">
+                <img src="images/money-belt.png" alt="" class="product-img">
+                <h2 class="product-title">Money Belt</h2>
+                <span class="product-price">$18.20</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 6  -->
+            <div class="product-box">
+                <img src="images/packing-cubes.png" alt="" class="product-img">
+                <h2 class="product-title">Packing Cubes</h2>
+                <span class="product-price">$37.60</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 7  -->
+            <div class="product-box">
+                <img src="images/rainboots.png" alt="" class="product-img">
+                <h2 class="product-title">Rain Boots</h2>
+                <span class="product-price">$32.15</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 8  -->
+            <div class="product-box">
+                <img src="images/raincoat.png" alt="" class="product-img">
+                <h2 class="product-title">Raincoat</h2>
+                <span class="product-price">$42.67</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 9  -->
+            <div class="product-box">
+                <img src="images/sleeping-bag.png" alt="" class="product-img">
+                <h2 class="product-title">Sleeping Bag</h2>
+                <span class="product-price">$63.55</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 10  -->
+            <div class="product-box">
+                <img src="images/surfboard-bag.png" alt="" class="product-img">
+                <h2 class="product-title">Surfboard Bag</h2>
+                <span class="product-price">$69.12</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+
+      <br><br><br><br><br><br>
+        
+      <!-- Footer -->
+      <footer>
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social_icon">
+          <li><a href="#" style="text-decoration: none;">Tour Up - Sri Lanka</a></li>
+        </ul>
+            
+        <ul class="menu">
+          <div class="tooltip">
+            <li>Created by - <a href="PageEditorHirushi.html" target="_blank">Hirushi Amarasinghe</a></li>
+            <span class="tooltiptext">Click on to view Page Editor</span>
+          </div>
+        </ul>
+        <p>Web Development Coursework - 2023 | All Rights Reserved</p>
+      </footer>
+        
+      <script src="shop.js"></script>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+body{
+    background: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#Splash{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav.logo{
+    width: 120px;
+}
+.title{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 160px;
+    color: transparent;
+    background-image: linear-gradient(#ffffff, #ffffff);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -750px 0;
+    animation: backcolor 5s linear infinite ;
+}
+@keyframes backcolor{
+    100%{
+        background-position: 0 0;
+    }
+}
+.wrapper{
+    display: inline-flex;
+    top: 50%;
+    left: 35%;
+    position: absolute;
+}
+.wrapper .static-txt{
+    color: #fff;
+    font-size: 45px;
+    font-weight: 400;
+}
+.dynamic-txts{
+    color: #fc6d6d;
+    list-style: none;
+    font-size: 40px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 0;
+    animation: typing 1.5s steps(30, end) forwards, blinking 1s infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+@keyframes blinking {
+    0% {border-right-color: transparent}
+    50% {border-right-color: black}
+    100% {border-right-color: transparent}
+}
+
+#Splash.fade{
+    opacity: 0;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}

@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+/* ------------------- Header ------------------- */
+.bg-image {
+  /* The image used */
+  background-image: url("images-Student-4/PE.jpg");
+
+  /* Add the blur effect */
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+
+  /* Full height */
+  height: 70%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ------------------- contont -------------------------------- */
+
+.content {
+
+  padding-left: 400px;
+  margin-top: 100px;
+  margin-right: 400px;
+  margin-left: 200px;
+  color: #f1f1f1;
+
+
+}
+
+.content ul {
+  text-align: left;
+  padding-left: 0px;
+
+
+}
+
+.content li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  padding: auto;
+  text-decoration: none;
+}
+
+
+.button {
+  padding-left: 600px;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 24px;
+
+  padding: 20px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.jumpBottom {
+  margin-top: 400px;
+  margin-left: 670px;
+
+}
+
+.jumpBottom {
+  padding-left: 400px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 80px;
+
+
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.end {
+  height: 800px;
+}
+
+hr {
+  margin-top: 80px;
+  margin-left: 200px;
+  margin-right: 200px;
+}

@@ -1,0 +1,141 @@
+/* importing google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nova+Mono&family=Raleway&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+/* ---------------- Main Banner ---------------- */
+.main-banner {
+  --childs: 5;
+  gap: 2px;
+  background: black;
+  width: 100%;
+  display: flex;
+}
+
+.box {
+  width: calc((100% / var(--childs)));
+  box-sizing: border-box;
+  height: 450px;
+  background-color: white;
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: width 300ms 50ms ease-in-out;
+}
+
+.box:hover {
+  width: calc((100% / (var(--childs) - 2)));
+}
+
+.main-banner:has(.box:hover) .box:not(:hover) {
+  width: calc((100% / (var(--childs) + 1)));
+}
+
+.box-1 {
+  background-image: url("https://images.pexels.com/photos/13341778/pexels-photo-13341778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.box-2 {
+  background-image: url("https://images.pexels.com/photos/638738/pexels-photo-638738.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.box-3 {
+  background-image: url("https://images.pexels.com/photos/1054666/pexels-photo-1054666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.box-4 {
+  background-image: url("https://images.pexels.com/photos/14243818/pexels-photo-14243818.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.box-5 {
+  background-image: url("https://images.pexels.com/photos/12755772/pexels-photo-12755772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+/* ---------------- Main Header ---------------- */
+
+.main-header {
+  margin: 100px 20%;
+  text-align: center;
+}
+
+.main-header h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 1px;
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 16px 0;
+  grid-gap: 22px;
+}
+
+.main-header h1:after,
+.main-header h1:before {
+  content: " ";
+  display: block;
+  border-bottom: 2px solid #ccc;
+  background-color: transparent;
+}
+
+.main-header p {
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+.main-header ol {
+  list-style-type: none;
+}
+.main-header a {
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+/* ---------------- Page Content ---------------- */
+
+.page-content {
+  margin: 0 40px;
+}
+
+.page-content img {
+  min-width: 700px;
+  height: 500px;
+}
+
+.page-content .content {
+  margin: 0 40px;
+}
+
+.image-left,
+.image-right {
+  margin: 20px 0px 50px 0px;
+  padding: 30px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 4px;
+}
+
+@media (min-width: 20em) {
+  .image-left,
+  .image-right {
+    display: flex;
+    align-items: center;
+  }
+
+  .image-left img {
+    margin-right: 1em;
+    float: left; /* fallback */
+  }
+
+  .image-right img {
+    order: 1;
+    margin-left: 1em;
+    float: right; /* fallback */
+  }
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tour Up - Sri Lanka</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="images/logo.jpeg">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="gallery.css">
+<script src="gallery.js"></script>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <ul class="nav_links">
+      <li><a href=""><img id="logo" src="images/logo.jpeg" alt="" class="logo"></a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="comments.html" style="padding-left: 250px; ">Comments</a></li>
+      <li><a href="shop.html" style="padding-left: 100px;">Shop</a></li>
+      <li><a href="quiz.html" style="padding-left: 100px;">Quiz</a></li>
+      <li><a href="blog.html" style="padding-left: 100px;">Blog</a></li>
+      <li><a href="siteMap.html" style="padding-left: 100px; font-size: large; color:cadetblue">Site Map</a></li>
+      <li><a href="aboutus.html" style="padding-left: 100px;">About Us</a></li>
+      <li><a href="gallery.html" style="padding-left: 100px; font-size: large; color:cadetblue">Gallery</a></li>
+    </ul>
+  </div>
+
+
+  <!-- Heading -->
+  <div class="header">
+    <div class="maintxt" id="maintxt">
+      <h1 >Gallery</h1>
+    </div>
+    <!-- Size Changer -->
+    <div class="size">
+      <button class="button" id="low" value="Low" onclick="smallSize()">A</button>
+      <button class="button" id="medium" value="Medium" onclick="normalSize()">A</button>
+      <button class="button" id="high" value="High" onclick="largeSize()">A</button>
+    </div>
+    <!-- Color Changer -->
+    <div class="colors">
+      <ul>
+        <li><button class="color-item" id="meroon" onclick="pickMeroon()"></button></li>
+        <li><button class="color-item" id="blue" onclick="pickBlue()"></button></li>
+        <li><button class="color-item" id="green" onclick="pickGreen()"></button></li>
+        <li><button class="color-item" id="yellow" onclick="pickYellow()"></button></li>
+      </ul>
+
+      <div class="color-picker">
+        <input type="color" onchange="changeColor()" id="color-picker">
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="fullContent">
+
+    <!-- Welcome Text-->
+    <div id="des">
+      <br><br><br>
+      <h1 style="text-align: center;color: black;">Ayubowan</h1>
+
+      <h2 style="text-align: center; padding-top: 0px; color: black;">Welcome to Sri Lanka</h2>
+      <h3 style="text-align: center;padding-top: 0px; color: black;">Let’s go make some memories around this beautiful
+        island</h3>
+      <br>
+    </div>
+
+
+
+    <!-- The four columns -->
+    <div class="row1">
+
+      <!-- 1 -->
+      <div class="column">
+        <h4 id="des1">Wild</h4>
+        <img src="images-Student-4/Wild.jpg" alt=" Despite its tiny size, Sri Lanka is among the top five biodiversity hotspots in the world and has one of the highest rates of biological endemism in the world, whether in plants or animals. Asian elephants, sloth bears, leopards, sambar, and wild buffaloes draw the majority of the interest of wildlife enthusiasts out of the ninety-one types of mammals found in Sri Lanka. 
+                Although the Sri Lanka is home to rare amphibians and powerful elephants, birds are the pride of Sri Lanka's wildlife. With nearly 433 bird species, 233 of which are resident, Sri Lanka is home to 20 endemic species. In contrast to their relatives on the Indian mainland, another 80 species have evolved distinct Sri Lankan races.
+                Despite receiving less attention, Sri Lanka is home to one of the world's highest diversitys of frogs, with over 106 species, of which over 90 are endemic. With a significant concentration in the Sinharaja rainforest, the nation has long asserted that it has the world's greatest density of amphibian species.
+                " width="350" height="210" onmouseover="myFunction(this);">
+      </div>
+
+      <!-- 2 -->
+      <div class="column">
+        <h4 id="des2">Persist</h4>
+        <img src="images-Student-4/Persist.jpg" alt="With approximately 1600 kilometers of palm-fringed coastline, Sri Lanka is the perfect vacation spot for beach lovers from all over the world. The two monsoon winds bring rain to the two corners of the country at different times, making a beach vacation in Sri Lanka a possibility all year long. Tangalla, Beruwala, Mirissa, Bentota, and Unawatuna are among the best beaches in the South; however, the east coast has not yet been fully explored. Locals and tourists alike frequently visit the Negambo lagoon, and the Colombians' playground is Galle Face Green, a half-kilometer stretch between Galle Road and the Indian Ocean.
+          " width="350" height="210" onmouseover="myFunction(this);">
+      </div>
+
+      <!-- 3 -->
+      <div class="column">
+        <h4 id="des3">Heritage</h4>
+        <img src="images-Student-4/Heritage.jpg" alt="With a 3000 year history, Sri Lanka is home to some of the world's most ancient cities, such as Anuradhapura, Polonnaruwa, and Digamadulla. These cities' once magnificent townships, palaces, temples, monasteries, hospitals, and theaters, all of which were intricately carved and modeled out of stone, have since been abandoned and forgotten amidst the country's towering jungles.
+      The Kingdom of Anuradhapura is one of the oldest continuously inhabited towns in the world and Sri Lanka's third and longest-serving capital is also one of the most revered by Buddhists worldwide.It served as Sri Lanka's capital from the Fourth Century BC until the turn of the eleventh Century and was one of South Asia's most enduring and stable hubs of political authority and urban activity.
+      During the Anuradhapura era, Digamadulla, the Eastern kingdom of Sri Lanka, served as the nation's agricultural and spiritual center.
+      The Kingdom of Kandy, the final kingdom in Sri Lanka, is proof of the country's people's capacity to emerge from the ashes.
+          " width="350" height="210" onmouseover="myFunction(this);">
+      </div>
+
+      <!-- 4 -->
+      <div class="column">
+        <h4 id="des4">Bliss</h4>
+        <img src="images-Student-4/Bliss.jpg"
+          alt="      Since the world became aware of Sri Lanka, it has continued to inspire and heal countless visitors to its shores.
+      Sri Lanka still manages to charm its guests, catching their attention with sights, sounds, and flavors. Many who set foot on the island had believed it a part of a divine existence.
+      While Ayurveda and meditation continue to cure the bodies and minds worn out by the cares of life, Sri Lankan cuisine is a secret delight to many.
+      Ayurveda, the indigenous medical system of the nation, has evolved over more than five thousand years.Shopping therapy is guaranteed to give you a momentary sense of bliss, even though it won't heal your body or mind or elevate your senses to a divine realm. Sri Lanka offers excellent opportunities for shopping, with options like brilliant jewels and jewelry, exquisitely carved wood, pottery and metal ware, porcelain, batik, spices, and tea.    "
+          width="350" height="210" onmouseover="myFunction(this);">
+      </div>
+    </div>
+    <br><br>
+
+
+    <!-- Container -->
+    <div class="container4">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img id="expandedImg" src="1" alt="expandImg">
+      <div id="imgtext"></div>
+    </div>
+
+    <div class="row2">
+      <!-- 5 -->
+      <div class="column">
+        <h4 id="des5">Trills</h4>
+        <img src="images-Student-4/Trill.jpg" alt="Sri Lanka provides a variety of adventures from the top of the mountains to the bottom of the oceans due to the diverse climates and geography packed into a small territory.
+            The most common beach activities in Sri Lanka are scuba diving and surfing, followed by swimming in the ocean and snorkeling. Today's oceans are home to a variety of exotic species, coral gardens, and ancient wrecks. One of the finest diving experiences in the world can be found in Sri Lanka. Although relatively new to the Sri Lanka, surfing has established a name for itself on the island's southern and eastern coasts over the past 25 years. 
+            While white water rafting,  and canoeing are some of the country's more recent water activities, the sea around Sri Lanka is also one of the most difficult locations for marine game fishing.
+            Sri Lanka provides many chances for avid hikers  with its numerous roads winding through rising mountains, lush green forests, paddy fields, parks, and sleepy towns.  
+        " width="350" height="210" onmouseover="myFunction(this);">
+      </div>
+
+      <!-- 6 -->
+      <div class="column">
+        <h4 id="des6">Festive</h4>
+        <img src="images-Student-4/fes.jpg" alt="There are always festivals and celebrations in Sri Lanka because of the country's diverse population of races and faiths. Sri Lanka is one of the nations with the greatest number of celebrations and holidays, with a holiday or celebration of religious or cultural significance occurring every month.
+          The biggest cultural event in the nation is the Sinhala-Tamil New Year celebration in April. The celebration denotes the start of the New Year and the conclusion of the farming season.
+          The most significant religious event in Sri Lanka is the May full moon poya day, also known as Vesak, when Buddhists commemorate the birth, enlightenment, and demise of Lord Buddha with numerous festivities.
+          The Esala celebrations take place in Kataragama and Kandy in August.The biggest cultural parade in the world, the Kandy Esala Perahera or Dalanda Perahera, features the best in Sri Lankan music, dancing, and domesticated tusker performance.
+          " width="350" height="210" onmouseover="myFunction(this);">
+      </div>
+
+      <!-- 7 -->
+      <div class="column">
+        <h4 id="des7">Scenic</h4>
+        <img src="images-Student-4/Scenic.jpg" alt="Sri Lanka, a relatively small island, has a wide range of topographies, climatic conditions, and natural characteristics. The notorious beaches of Sri Lanka have long drawn tourists. The remainder of the island, however, has a lot more picturesque landscapes.
+          Emerald tea plantations and sporadic waterfalls are scattered throughout the central mountains. Cool temperatures, foggy vistas, and charming estate bungalows are remnants of bygone periods.
+          The North of Sri Lanka is a lively mixture of flavors, each with their own distinct flavor and culture. The north is a true testament to the island's richness and variety, despite still showing signs of the civil war. Portuguese, Dutch, Tamil, Muslim, and British symbols are influences. Off the coast, chains of islands with their own distinctive habitats are dispersed and just ready to be discovered.
+          Beautiful sunrises, luxuriant paddy fields, and a slower, more rural rhythm of life can all be found in the island's east. Any tired traveler will find solace in the vibrant places of worship, national parks, ports and harbors, and crystal-clear waters.
+          " width="350" height="210" onmouseover="myFunction(this);">
+      </div>
+
+      <!-- 8 -->
+      <div class="column">
+        <h4 id="des8">Essence</h4>
+        <img src="images-Student-4/es.jpg" alt="The secret to Sri Lanka's appeal rests with its people, despite the island's reputation as a beautiful place to visit. Sri Lankans are known for having big smiles and bigger hearts. They are also addicted to spices, are obsessive about cricket, and consume tea.
+          Everyone in Sri Lanka enjoys spicy food and mild tea, which is inevitable for a nation that creates the best spices and tea in the world. The finest tea in the world is Ceylon tea, which colonial British introduced to the nation in the 19th century.
+          In addition to tea and sports, Sri Lanka is known for its gems, particularly blue sapphires. The history of the nation's gem business is long and colorful. Sri Lanka, also known as Rathnadeepa or the land of gems, had been producing a variety of gems, including brilliant blue sapphires and red rubies. Sri Lanka had been exporting finely crafted ivory to numerous royal palaces in Europe along with gems. 
+
+          " width="350" height="210" onmouseover="myFunction(this);">
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social_icon">
+      <li><a href="#" style="text-decoration: none;">Tour Up - Sri Lanka</a></li>
+    </ul>
+
+    <div class="tooltip">
+      <ul class="menu">
+        <li>Created by - <a href="pageEditor-SachiniWewalwala.html" target="_blank">Sachini Wewalwala</a></li>
+      </ul>
+      <span class="tooltiptext">Click on to view Page Editor</span>
+
+    </div>
+
+    <p>Web Development Coursework - 2023 | All Rights Reserved</p>
+  </footer>
+
+
+  <script>
+
+    //image expand
+    function myFunction(imgs) {
+      var expandImg = document.getElementById("expandedImg");
+      var imgText = document.getElementById("imgtext");
+      expandImg.src = imgs.src;
+      imgText.innerHTML = imgs.alt;
+      expandImg.parentElement.style.display = "block";
+    }
+
+
+    //Color Picker
+    function generateColor() {
+      var randomColor = Math.floor(Math.random() * 16777215).toString(16);
+      document.body.style.backgroundColor = "#" + randomColor;
+      document.querySelector(".color").style.backgroundColor = "#" + randomColor;
+    }
+
+    function changeColor() {
+      var selectedColor = document.querySelector(".color-picker input").value;
+      document.body.style.backgroundColor = selectedColor;
+      document.querySelector(".color").style.backgroundColor = selectedColor;
+    }
+  </script>
+</body>
+
+</html>
